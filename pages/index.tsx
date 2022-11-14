@@ -8,6 +8,7 @@ import { VolumeDown, VolumeUp, PlayArrow } from "@mui/icons-material";
 import StopIcon from "@mui/icons-material/Stop";
 import { useEffect, useRef, useState } from "react";
 import LocalDiningIcon from "@mui/icons-material/LocalDining";
+import MuiLink from "@mui/material/Link";
 
 export default function Home() {
   const [sauceVolume, setSauceVolume] = useState(50);
@@ -146,6 +147,14 @@ export default function Home() {
                 <LocalDiningIcon />
                 作る!
               </Button>
+            </Grid>
+            <Grid sm={6} xs={6}>
+              <MuiLink
+                href="https://github.com/March-mitsuki/pasta-maker"
+                target="_blank"
+              >
+                github上でソースコードを見る
+              </MuiLink>
             </Grid>
           </Grid>
         </Item>
